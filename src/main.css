@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Tahoma';
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.container-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-60 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container-40 {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.darkBg {
+  background: rgb(33, 33, 33);
+  color: white;
+}
+
+.clearBg {
+  background: white;
+  color: rgb(33, 33, 33);
+}

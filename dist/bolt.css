@@ -1,0 +1,201 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 5px 0;
+}
+
+.row:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+[class*='col-'] {
+  float: left;
+  margin-right: 2%;
+}
+
+[class*='col-']:last-of-type {
+  margin-right: 0;
+}
+
+.col-1 {
+  width: 6.5%;
+}
+.col-2 {
+  width: 15%;
+}
+.col-3 {
+  width: 23.5%;
+}
+.col-4 {
+  width: 32%;
+}
+.col-5 {
+  width: 40.5%;
+}
+.col-6 {
+  width: 49%;
+}
+.col-7 {
+  width: 57.5%;
+}
+.col-8 {
+  width: 66%;
+}
+.col-9 {
+  width: 74.5%;
+}
+.col-10 {
+  width: 83%;
+}
+.col-11 {
+  width: 91.5%;
+}
+.col-12 {
+  width: 100%;
+}
+/* 1 rem = 10px */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+button {
+  background: rgb(200, 200, 200);
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button.noBG {
+  background: none;
+  border: 1px solid black;
+  color: black;
+}
+input[type=email], input[type=password], input[type=search], input[type=text], select {
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  margin: 2px 0;
+}
+
+textarea,
+textarea[type=text] {
+  font-family: 'Open Sans';
+  height: 100px;
+  padding: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 2px 0;
+  resize: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Tahoma';
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.container-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-60 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container-40 {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.darkBg {
+  background: rgb(33, 33, 33);
+  color: white;
+}
+
+.clearBg {
+  background: white;
+  color: rgb(33, 33, 33);
+}
+pre {
+    -moz-tab-size:    2; /* Firefox 4+ */
+    -o-tab-size:      2; /* Opera 11.5 & 12.1 only */
+    tab-size:         2; /* Chrome 21+, Safari 6.1+, Opera 15+ */
+    white-space: pre-wrap;
+}
+pre>code {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(200, 200, 200);
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #0275d8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.red {
+  color: red;
+}
+
+a.green {
+  color: #5cb85c;
+}

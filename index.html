@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <title>Bolt.CSS</title>
+    <link rel="stylesheet" href="dist/bolt.min.css">
+    <style>
+      .grid {
+        background: rgb(230, 230, 230);
+        padding: 3px 3px;
+        border-radius: 5px;
+        height: 20px;
+      }
+      .block, .code {
+        margin: 20px 0;
+      }
+      h2:not(.not) {
+        margin-bottom: 20px;
+      }
+      .forms input, .forms textarea, .forms select, .forms button {
+        width: 100%;
+      }
+      .paragraph {
+        margin: 10px 0 30px;
+      }
+      img {
+        border-radius: 5px;
+      }
+      .pLeft {
+        text-align: left;
+      }
+      .pCenter {
+        text-align: center;
+      }
+      .pRight {
+        text-align: right;
+      }
+      @media screen and (max-width:550px) {
+        .buttons button {
+          margin: 10px 0;
+        }
+        h2:not(.not) {
+          margin-bottom: 20px;
+          font-size: 1.5rem;
+          line-height: 1.2;
+          text-decoration: underline;
+        }
+        [class*='col-']:not(.grid) {
+          width: 100%;
+          margin: 5px 0;
+        }
+        .code {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-80">
+      <h1>Bolt.CSS <img src="logo.png" alt=""></h1>
+      <p>Get your project's styles up and running faster than Bolt <a href="https://www.youtube.com/watch?v=0PH0SV4j1Es" target='_blank'>runs 100m.</a></p>
+      <div class='block gridBlock'>
+        <h2>Grid system</h2>
+        <div class="row">
+          <div class="col-12 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-1 grid"></div>
+          <div class="col-11 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-2 grid"></div>
+          <div class="col-10 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-3 grid"></div>
+          <div class="col-9 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-4 grid"></div>
+          <div class="col-8 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-5 grid"></div>
+          <div class="col-7 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-6 grid"></div>
+          <div class="col-6 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-7 grid"></div>
+          <div class="col-5 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-8 grid"></div>
+          <div class="col-4 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-9 grid"></div>
+          <div class="col-3 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-10 grid"></div>
+          <div class="col-2 grid"></div>
+        </div>
+        <div class="row">
+          <div class="col-11 grid"></div>
+          <div class="col-1 grid"></div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class="col-4 forms">
+          <h2>Forms</h2>
+          <input type="email" placeholder='Enter your email' required>
+          <input type="text" placeholder='Give me your name' required>
+          <input type="password" placeholder='Now spit your password' required>
+          <select name="" id="">
+            <option value="">Select something</option>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+          </select>
+          <textarea name="" id="" cols="30" rows="10" placeholder='Tell me how shit this is :)'></textarea>
+          <button>Submit</button>
+        </div>
+        <div class="col-4 buttons">
+          <h2>Buttons</h2>
+          <button>Button</button>
+          <button class='noBG'>Outline</button>
+          <button disabled>Disabled</button>
+        </div>
+        <div class="col-4">
+          <h2>Typography</h2>
+          <h6>h6</h6>
+          <h5>h5</h5>
+          <h4>h4</h4>
+          <h3>h3</h3>
+          <h2 class='not'>h2</h2>
+          <h1>h1</h1>
+        </div>
+      </div>
+      <div class="row code">
+        <h2>Code</h2>
+        <pre>
+          <code>
+            function isThisCode() {
+              if(this.bg === grey) {
+                return true;
+              }
+              return false;
+            }
+          </code>
+        </pre>
+      </div>
+      <div class="row paragraph">
+        <h2>Paragraph</h2>
+        <div class="col-4 pLeft">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magnam illo praesentium, id voluptate corrupti dicta recusandae. Nemo dolorem perferendis, rerum ea quasi sequi, corrupti esse suscipit dolore officiis labore.</p>
+        </div>
+        <div class="col-4 pCenter">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magnam illo praesentium, id voluptate corrupti dicta recusandae. Nemo dolorem perferendis, rerum ea quasi sequi, corrupti esse suscipit dolore officiis labore.</p>
+        </div>
+        <div class="col-4 pRight">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magnam illo praesentium, id voluptate corrupti dicta recusandae. Nemo dolorem perferendis, rerum ea quasi sequi, corrupti esse suscipit dolore officiis labore.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+pre {
+    -moz-tab-size:    2; /* Firefox 4+ */
+    -o-tab-size:      2; /* Opera 11.5 & 12.1 only */
+    tab-size:         2; /* Chrome 21+, Safari 6.1+, Opera 15+ */
+    white-space: pre-wrap;
+}
+pre>code {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(200, 200, 200);
+  border: none;
+}
